@@ -9,12 +9,12 @@
 var listaCognomi = ['Bianchi', 'Rossi', 'Duzioni', 'Balsano', 'Verdi'];
 
 var utente = prompt('inserisci il tuo cognome');
-var format = utente.charAt(0).toUpperCase() + utente.slice(1).toLowerCase();
+utente = utente.charAt(0).toUpperCase() + utente.slice(1).toLowerCase();
 
-listaCognomi.push(format);
+listaCognomi.push(utente);
 listaCognomi.sort();
 
-var posizioneUmana = listaCognomi.indexOf(format) + 1;
+var posizioneUmana = listaCognomi.indexOf(utente) + 1;
 
 
 for (var i=0; i<listaCognomi.length; i++) {
