@@ -8,7 +8,10 @@
 
 var listaCognomi = ['Bianchi', 'Rossi', 'Duzioni', 'Balsano', 'Verdi'];
 
-var utente = prompt('inserisci il tuo cognome');
+do {
+    var utente = prompt('inserisci il tuo cognome');
+} while (utente == '');
+
 utente = utente.charAt(0).toUpperCase() + utente.slice(1).toLowerCase();
 
 listaCognomi.push(utente);
